@@ -164,6 +164,25 @@ body > *{font-family: 'General Sans', sans-serif;}
     #delivery-humy .col .bg-dark-gray:nth-of-type(2) {
         height: auto; /* İkinci div yüksekliği otomatik */
     }
+
+    @media (max-width: 992px) {
+        #delivery-humy h1 {
+          font-size: 1.5rem;
+        }
+      
+        #delivery-humy h3, #delivery-humy h4 {
+          font-size: 1.2rem;
+        }
+      
+        #delivery-humy p {
+          font-size: 1rem;
+        }
+      
+        #delivery-humy .col {
+          padding: 2rem;
+        }
+      }
+      
     
     
 
@@ -290,36 +309,51 @@ i.fa.fa-quote-left {
 
 
 
-
-
-#slider_brands {
+@keyframes slides {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .logos {
     overflow: hidden;
-    max-width: 100%;
+    padding: 30px 0px;
+    white-space: nowrap;
     position: relative;
-    padding-bottom: 106px; /* Footer yüksekliğine göre ayarlandı */
-}
-
-#slider_brands figure {
-    display: flex;
-    width: 200%; /* Resimlerin toplam genişliğine göre ayarlayın */
-    margin: 0;
+  }
+  
+  .logos:before, .logos:after {
     position: absolute;
     top: 0;
+    content: '';
+    width: 250px;
+    height: 100%;
+    z-index: 2;
+  }
+  
+  .logos:before {
     left: 0;
-    animation: slidy_brands 30s linear infinite;
-}
-
-#slider_brands img {
-    width: 100px; /* Resim genişliğini buradan ayarlayın */
-    height: auto;
-    margin-right: 14px; /* Resimler arasındaki boşluğu ayarlayın */
-}
-
-@keyframes slidy_brands {
-    0% { left: 0%; }
-    100% { left: -100%; } /* Resimlerin toplam genişliğine göre ayarlayın */
-}
-
-#slider_brands figure:hover {
+    background: linear-gradient(to left, rgba(255,255,255,0), rgb(255, 255, 255));
+  }
+  
+  .logos:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255,255,255,0), rgb(255, 255, 255));
+  }
+  
+  .logo_items {
+    display: inline-block;
+    animation: 35s slides infinite linear;
+  }
+  
+  .logos:hover .logo_items {
     animation-play-state: paused;
-}
+  }
+  
+  .logo_items img{
+    height: 30px;
+    padding: 0 20px;
+  }
