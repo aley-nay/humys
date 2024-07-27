@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Humpy</title>
+    <link rel="icon" type="image/x-icon" href="assets/logo.png">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link href="https://api.fontshare.com/v2/css?f[]=general-sans@200,201,300,301,400,401,500,501,600,601,700,701&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/aos.css">
+    <style>
+#animation-motor {
+  height: 50vh;
+  background: url('assets/confirm/yol.jpg');
+  background-position: center;
+  position: relative;
+}
+
+#moto {
+  bottom: 38%;
+  position: absolute;
+  -webkit-animation: run 3s linear 1 forwards;
+  animation: run 3s linear 1 forwards;
+  z-index: 1; /* Moto'nun z-index değeri */
+}
+
+@-webkit-keyframes run {
+  0% {
+    left: 0;
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    left: 100%;
+    opacity: 0;
+  }
+}
+
+@keyframes run {
+  0% {
+    left: 0;
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    left: 100%;
+    opacity: 0;
+  }
+}
+
+#confetti {
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  z-index: 1; /* Confetti'nin tüm öğelerin altında olması için */
+  width: auto; /* Confetti boyutunu ayarlayın */
+  height: auto; /* Confetti yüksekliğini korur */
+  opacity: 0; /* Başlangıçta gizle */
+  animation: confettiapp 5s linear 1 forwards;
+}
+
+@keyframes confettiapp {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+    </style>
+  </head>
+  <body>
+    <div class="container mb-3 py-5 position-relative" style="z-index: 1010;">
+      <div class="d-flex bd-highlight">
+        <div class="me-auto p-2 bd-highlight">
+          <a href="#"><img alt="" id="logo" src="assets/logo/logo-s.png" width="100"></a>
+        </div>
+        <div class="p-2 bd-highlight">
+          <a href="sss.html">
+            <button type="button" class="btn btn-light border border-dark">
+              S.S.S<i class="bi bi-chevron-down ms-2"></i>
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div id="animation-motor" class="container-fluid position-relative">
+      <img id="moto" class="position-absolute" src="assets/confirm/motor.png">
+      <img id="confetti" class="position-absolute" src="assets/confirm/konfeti.gif">
+    </div>
+    <div class="container py-5 position-relative" data-aos="fade-up" style="z-index: 3;">
+      <div class="row justify-content-center">
+        <h1 class="text-center aos-init aos-animate">Tebrikler! Başvurunuzu aldık.</h1>
+        <p class="text-secondary text-center aos-init aos-animate">Sizi 0850 ile başlayan bir numaradan arayacağız</p>
+        <a href="index.html" class="bg-orange fw-normal mx-1 px-4 py-2 text-white rounded btn-sm text-decoration-none" style="width: 100px;">Kapat</a>
+      </div>
+    </div>
+    <p class="text-center text-secondary py-3" style="font-size: 14px;">2024 Humy. Tüm hakları saklıdır.</p>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+    <script src="js/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
