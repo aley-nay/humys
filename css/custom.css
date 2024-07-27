@@ -370,3 +370,16 @@ i.fa.fa-quote-left {
     height: 30px;
     padding: 0 20px;
   }
+
+
+
+
+
+
+  /* rounded for items */
+
+    .custom-rounded {
+        border-radius: 25px;
+        border: #fff 15px solid;
+    }
+
