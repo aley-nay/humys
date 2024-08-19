@@ -169,12 +169,13 @@ body{
         border-radius: 0.5rem; /* Köşe yuvarlama */
     }
     
+    #delivery-humy .deliverybox{height: 80vh; overflow: hidden; background: #fb5607;}
     #delivery-humy .col .bg-dark-gray:nth-of-type(1) {
         height: 25vh; /* İlk div yüksekliği */
         margin-bottom: 1rem; /* Alt boşluk ekle */
     }
     
-    #delivery-humy .col .bg-dark-gray:nth-of-type(2) {
+    #delivery-humy .col .bg-dark-gray:nth-of-type(2)#delivery-humy .col .bg-dark-gray:nth-of-type(3) {
         height: auto; /* İkinci div yüksekliği otomatik */
     }
 
