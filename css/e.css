@@ -1,0 +1,14 @@
+.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link{color: white}
+
+.bg-orange:hover{background-color:#e04c07!important;}
+
+.bg-transparent:hover{background-color:#e1e1e14b!important;}
+
+.bg-gray:hover {
+    background: #000000 !important;
+}
+
+#footer a:hover{
+    color: #be4006!important;
+}
+

@@ -9,15 +9,15 @@ body > *{
 }
 body{
     background: #f4f4f5;
-    color: #131217;
+
     font-size: 1rem;
     line-height: 1.5;
     font-weight: 400;
     overflow-x: hidden;
 }
 
-
-
+.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link{color: white}
+a.bg-orange:hover {color: white!important;}
 .bg-orange{background: #FB5607!important;}
 .accordion-button::after {
     flex-shrink: 0;
@@ -111,10 +111,9 @@ body{
 
 
 .bg-transparent{background: transparent; border: 1px solid white;}
-.bg-transparent:hover{border: 1px solid #e1e1e1!important; color: #e1e1e1!important;}
 
 .w-58{width: 58%!important;}
-.bg-orange:hover{background-color: #be4006;}
+.bg-orange:hover{background-color: #0c0400;}
 .bg-gray{background: white;}
 .bg-dark-gray{background: #f4f4f5;}
 .animate-menu-w{background: white;}
@@ -129,9 +128,9 @@ body{
 #header.bg-w{background: url("../assets/bg/home.jpg"); background-size: cover; background-repeat: no-repeat; background-position: center;}
 
 #main-picture h1 span{color: #ffffff75;}
-#main-menu a:hover, a:hover{color: #be4006!important;}
-
-.animate-menu-b, #s-slogan{background: #131217;}
+#main-menu a:hover, a:hover{color: #be4006;}
+#s-slogan{background: #FB5607;}
+.animate-menu-b{background: #131217;}
 .animate-menu{ z-index: 1000;}
 
 [id] {scroll-margin-top: 60px;}
@@ -178,6 +177,8 @@ body{
     #delivery-humy .col .bg-dark-gray:nth-of-type(2)#delivery-humy .col .bg-dark-gray:nth-of-type(3) {
         height: auto; /* İkinci div yüksekliği otomatik */
     }
+    
+  
 
     @media (max-width: 992px) {
         #delivery-humy h1 {
@@ -195,6 +196,9 @@ body{
         #delivery-humy .col {
           padding: 2rem;
         }
+
+        
+
       }
       
     
@@ -233,8 +237,6 @@ body{
         margin: 0; 
     }
 
-
-    
 
 
 }
