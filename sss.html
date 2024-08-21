@@ -2,99 +2,50 @@
 <html lang="tr">
   <head>
     <meta charset="utf-8" >
-    <title>Humpy</title>
-    <link rel="shortcut icon" href="assets/logo.png" >
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"
-    >
+    <title>Humy</title>
+    <link rel="shortcut icon" href="assets/logo/ico.png" >
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
     <meta name="description" content="" >
     <meta name="keywords" content="" >
     <meta name="robots" content="noindex,nofollow" >
     <link rel="stylesheet" href="css/custom.css" >
     <link rel="stylesheet" href="css/bootstrap.min.css" >
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
-    >
-    <link
-      href="https://api.fontshare.com/v2/css?f[]=general-sans@200,201,300,301,400,401,500,501,600,601,700,701&display=swap"
-      rel="stylesheet"
-    >
+    <link rel="stylesheet" href="css/e.css" >
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link href="https://api.fontshare.com/v2/css?f[]=general-sans@200,201,300,301,400,401,500,501,600,601,700,701&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/aos.css" >
   </head>
   <body>
     <section id="header" class="container-fluid position-relative bg-s">
-      <section id="main-menu" data-aos="fade-down">
+      <section id="main-menu" data-aos="fade-down" class="aos-init aos-animate">
         <nav class="navbar navbar-expand-lg fixed-top animate-menu-b">
           <div class="container">
-            <button
-              class="navbar-toggler border-0"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#s-menu"
-              aria-controls="h-menu"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#s-menu" aria-controls="h-menu" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon line-orange border-0"></span>
             </button>
-            <a class="navbar-brand fw-bolder" href="#"
-              ><img src="assets/logo/logo-o.png" width="100" alt=""
-            ></a>
-            <div class="collapse navbar-collapse" id="s-menu">
-              <ul class="navbar-nav mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a
-                    class="nav-link active text-white"
-                    aria-current="page"
-                    href="#"
-                    >Kimler İçin?</a
-                  >
+            <a class="navbar-brand fw-bolder" href="index.html"><img alt="" id="logo" src="assets/logo/logo-o.png" width="100"></a>
+            <div class="collapse navbar-collapse container" id="s-menu">
+              <ul class="navbar-nav mb-2 mb-lg-0 row text-nowrap">
+                <li class="nav-item col">
+                  <a class="nav-link active" aria-current="page" href="index.html">Kimler İçin?</a>
                 </li>
-                <li class="nav-item">
-                  <a
-                    class="nav-link active text-white"
-                    aria-current="page"
-                    href="#"
-                    >Humpy Nedir?</a
-                  >
+                <li class="nav-item col">
+                  <a class="nav-link active" aria-current="page" href="index.html">Humpy Nedir?</a>
                 </li>
-                <li class="nav-item">
-                  <a
-                    class="nav-link active text-white"
-                    aria-current="page"
-                    href="#"
-                    >Humpy Avantajları</a
-                  >
+                <li class="nav-item col">
+                  <a class="nav-link active" aria-current="page" href="index.html">Humpy Avantajları</a>
                 </li>
-                <li class="nav-item">
-                  <a
-                    class="nav-link active text-white"
-                    aria-current="page"
-                    href="#"
-                    >S.S.S</a
-                  >
+                <li class="nav-item col">
+                  <a class="nav-link active" aria-current="page" href="index.html">S.S.S</a>
                 </li>
-                <li class="nav-item">
-                  <a
-                    class="nav-link active text-white"
-                    aria-current="page"
-                    href="#"
-                    >İletişim</a
-                  >
+                <li class="nav-item col">
+                  <a class="nav-link active" aria-current="page" href="index.html">İletişim</a>
                 </li>
+                <li class="nav-item col"></li>
               </ul>
               <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a
-                    class="nav-link active bg-orange fw-normal mx-1 px-4 py-2 text-white rounded-pill"
-                    aria-current="page"
-                    href="#"
-                    >Apply Now and Get %0 Commission<i
-                      class="bi bi-arrow-down-right ms-3"
-                    ></i
-                  ></a>
+                  <a class="btn-orange nav-link active bg-orange fw-normal mx-1 px-4 py-2 rounded-pill" aria-current="page" href="#">Apply Now and Get %0 Commission<i class="bi bi-arrow-down-right ms-3"></i></a>
                 </li>
               </ul>
             </div>
@@ -433,11 +384,11 @@
             </p>
             <div class="d-flex w-100">
               <a
-                class="nav-link active bg-orange fw-normal mx-1 px-4 py-2 text-white rounded-pill"
+                class="nav-link active bg-transparent fw-normal mx-1 px-4 py-2 text-white rounded-pill"
                 aria-current="page"
                 href="#"
-                >Hemen Başvur</a
-              >
+                >Hemen Başvur<i class="bi bi-arrow-down-right ms-3"></i
+              ></a>
               <a
                 class="nav-link active fw-normal mx-1 px-4 py-2 text-dark rounded-pill bg-gray"
                 aria-current="page"
@@ -550,21 +501,13 @@
       </div>
     </section>
     <div id="footer-more" class="container-fluid bg-light py-2">
-      <div class="container d-flex bd-highlight">
-        <div class="me-auto p-2 bd-highlight">
-          <p>
-            © 2024 Humy –
-            <span class="text-secondary">Tüm hakları saklıdır.</span>
-          </p>
-        </div>
-        <div class="p-2 bd-highlight">
-          <a href="" class="text-secondary">Hizmet Koşulları</a>
-        </div>
-        <div class="p-2 bd-highlight">
-          <a href="" class="text-secondary">Gizlilik Politikası</a>
-        </div>
+      <div class="me-auto p-2 bd-highlight">
+        <p  class="text-center">
+          © 2024 Humy –
+          <span class="text-secondary">Tüm hakları saklıdır.</span>
+        </p>
       </div>
-    </div>
+  </div>
 
     <script
       src="https://code.jquery.com/jquery-3.6.1.js"
@@ -572,43 +515,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="js/bootstrap.min.js"></script>
-
-    <script type="text/javascript">
-      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-        anchor.addEventListener("click", function (e) {
-          e.preventDefault();
-
-          const targetId = this.getAttribute("href").substring(1);
-          const targetElement = document.getElementById(targetId);
-          const navbarHeight =
-            document.querySelector(".fixed-top").offsetHeight;
-
-          window.scrollTo({
-            top: targetElement.offsetTop - navbarHeight,
-            behavior: "smooth",
-          });
-        });
-      });
-
-	//   Mobilde menü görünümünü arkaplan beyaz yapılacak şekilde güncelledim
-	$(document).ready(function(){
-		if($(window).width() < 992){
-			$("#main-menu>.navbar").addClass("animate-menu-w");
-			$("#logo").attr("src", "assets/logo/logo-o.png");
-		}else{
-			if ($(window).scrollTop() > 50) {
-          $("#main-menu>.navbar").addClass("animate-menu-w");
-          $("#logo").attr("src", "assets/logo/logo-o.png");
-        } else {
-          $("#main-menu>.navbar").removeClass("animate-menu-w");
-          $("#logo").attr("src", "assets/logo/logo-w.png");
-        }
-		}
-	});
-    </script>
     <script src="js/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
+    <script src="js/customs.js"></script>
   </body>
 </html>
